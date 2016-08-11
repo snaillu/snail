@@ -22,7 +22,7 @@ public class QuartzTest {
             Trigger trigger = TriggerBuilder.newTrigger().withIdentity("trigger1","group1")
                     .startNow().withSchedule(SimpleScheduleBuilder
                             .simpleSchedule().withIntervalInSeconds(5).repeatForever()).build();
-            scheduler.scheduleJob(jobDetail,trigger);
+            //scheduler.scheduleJob(jobDetail,trigger);
 
 
             scheduler.start();
