@@ -1,0 +1,37 @@
+INFO main com.snail.study.Client - this is a test.
+INFO main org.quartz.impl.StdSchedulerFactory - Using default implementation for ThreadExecutor
+INFO main org.quartz.core.SchedulerSignalerImpl - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+INFO main org.quartz.core.QuartzScheduler - Quartz Scheduler v.2.2.3 created.
+INFO main org.quartz.simpl.RAMJobStore - RAMJobStore initialized.
+INFO main org.quartz.core.QuartzScheduler - Scheduler meta-data: Quartz Scheduler (v2.2.3) 'MyScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 3 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+INFO main org.quartz.impl.StdSchedulerFactory - Quartz scheduler 'MyScheduler' initialized from default resource file in Quartz package: 'quartz.properties'
+INFO main org.quartz.impl.StdSchedulerFactory - Quartz scheduler version: 2.2.3
+INFO main org.quartz.core.QuartzScheduler - Scheduler MyScheduler_$_NON_CLUSTERED started.
+INFO main org.quartz.core.QuartzScheduler - Scheduler MyScheduler_$_NON_CLUSTERED shutting down.
+INFO main org.quartz.core.QuartzScheduler - Scheduler MyScheduler_$_NON_CLUSTERED paused.
+INFO main org.quartz.core.QuartzScheduler - Scheduler MyScheduler_$_NON_CLUSTERED shutdown complete.
+INFO main org.quartz.impl.StdSchedulerFactory - Using default implementation for ThreadExecutor
+INFO main org.quartz.core.SchedulerSignalerImpl - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+INFO main org.quartz.core.QuartzScheduler - Quartz Scheduler v.2.2.3 created.
+INFO main org.quartz.simpl.RAMJobStore - RAMJobStore initialized.
+INFO main org.quartz.core.QuartzScheduler - Scheduler meta-data: Quartz Scheduler (v2.2.3) 'MyScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 3 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+INFO main org.quartz.impl.StdSchedulerFactory - Quartz scheduler 'MyScheduler' initialized from default resource file in Quartz package: 'quartz.properties'
+INFO main org.quartz.impl.StdSchedulerFactory - Quartz scheduler version: 2.2.3
+INFO main org.quartz.core.QuartzScheduler - Scheduler MyScheduler_$_NON_CLUSTERED started.
+INFO MyScheduler_Worker-1 com.snail.study.quartz.HelloJob - HelloJob execute...
+INFO MyScheduler_Worker-2 com.snail.study.quartz.HelloJob - HelloJob execute...
+INFO MyScheduler_Worker-3 com.snail.study.quartz.HelloJob - HelloJob execute...
