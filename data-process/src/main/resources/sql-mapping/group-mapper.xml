@@ -4,26 +4,12 @@
 <mapper namespace="groupDao">
     <resultMap id="groupMap" type="com.dianping.entity.Group">
         <result column="GroupID" property="groupID" />
-        <result column="GroupName" property="groupName" />
-        <result column="GroupPermaLink" property="groupPermaLink" />
         <result column="GroupIntro" property="groupIntro" />
         <result column="GroupLogo" property="groupLogo" />
-        <result column="CreateDate" property="createDate" />
-        <result column="CreateUser" property="createUser" />
-        <result column="LastIP" property="lastIP" />
-        <result column="UserTotal" property="userTotal" />
-        <result column="MainNoteTotal" property="mainNoteTotal" />
-        <result column="NoteTotal" property="noteTotal" />
-        <result column="WeeklyNoteCount" property="weeklyNoteCount" />
         <result column="SearchKeyWord" property="searchKeyWord" />
-        <result column="HitsTotal" property="hitsTotal" />
-        <result column="Status" property="status" />
-        <result column="CityID" property="cityID" />
-        <result column="GroupProperty" property="groupProperty" />
-        <result column="GroupTypeID" property="groupTypeID" />
     </resultMap>
 
     <select id="queryGroupInfo" resultMap="groupMap">
-        SELECT * FROM DP_Group;
+        select GroupID,GroupIntro,GroupLogo,SearchKeyWord from DP_Group;
     </select>
 </mapper>
