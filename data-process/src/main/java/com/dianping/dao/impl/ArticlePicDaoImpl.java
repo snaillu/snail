@@ -1,6 +1,5 @@
 package com.dianping.dao.impl;
 
-import com.dianping.dao.ArticlePicDao;
 import com.dianping.dao.BaseDao;
 import com.dianping.entity.ArticlePic;
 import org.apache.ibatis.session.SqlSessionFactory;

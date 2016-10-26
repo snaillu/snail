@@ -1,6 +1,7 @@
 package com.dianping.service.impl;
 
 import com.dianping.dao.BaseDao;
+import com.dianping.process.ProcessFactory;
 import com.dianping.service.DataProcessorService;
 import com.dianping.vo.ProcessModel;
 import org.slf4j.Logger;
@@ -29,9 +30,29 @@ public class DataProcessorServiceImpl extends ApplicationObjectSupport implement
             List<T> result = getProcessData(model);
             for(T item:result){
                 Map<String,String> dataMap = convertProcessData(item);
-                logger.info("[数据处理] T={}",dataMap);
+                item = processPicInfo(item,dataMap);
+                logger.info("[数据处理] T={}",item);
             }
         }
+    }
+
+    //处理数据中的图片信息
+    private <T> T processPicInfo(T t,Map<String,String> dataMap){
+        if(dataMap == null)
+            return null;
+        for(Map.Entry<String,String> entry:dataMap.entrySet()){
+            String result = ProcessFactory.format(entry.getValue());
+            Class cls = t.getClass();
+            try{
+                Field field = cls.getDeclaredField(entry.getKey());
+                field.setAccessible(true);
+                field.set(t,result);
+            }catch (Exception e){
+                logger.error("[数据处理]  获取实体属性发生异常，异常信息问：{}",e.getMessage());
+            }
+
+        }
+        return t;
     }
 
 

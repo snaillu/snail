@@ -32,4 +32,13 @@ public enum  ContentTypeEnum {
     public void setMsg(String msg) {
         this.msg = msg;
     }
+
+    public static ContentTypeEnum getContentType(int code){
+        for(ContentTypeEnum contentTypeEnum:ContentTypeEnum.values()){
+            if(contentTypeEnum.getCode()==code)
+                return contentTypeEnum;
+        }
+
+        return null;
+    }
 }

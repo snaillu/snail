@@ -2,6 +2,8 @@ package com.dianping.process;
 
 import com.dianping.enums.ContentTypeEnum;
 
+import java.util.Random;
+
 /**
  * Created by snail on 10/16/16.
  */
@@ -13,7 +15,8 @@ public class ProcessFactory {
     }
 
     private static ContentTypeEnum getContentType(String str){
-        return ContentTypeEnum.URL;
+        Random random = new Random();
+        return ContentTypeEnum.getContentType(random.nextInt(4)+1);
     }
 
     //根据数据类型获取对于的处理器

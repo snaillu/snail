@@ -1,7 +1,6 @@
 package com.dianping.test;
 
 import com.dianping.base.BaseTest;
-import com.dianping.dao.ArticlePicDao;
 import com.dianping.dao.BaseDao;
 import com.dianping.entity.ArticlePic;
 import org.junit.Test;

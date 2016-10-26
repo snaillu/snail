@@ -14,6 +14,9 @@ public class DataProcessorServiceTest extends BaseTest {
 
     @Test
     public void process(){
-        dataProcessorService.process();
+        //dataProcessorService.process();
+        int total = new Double(Math.ceil(126/100)).intValue();
+        System.out.println("total="+total+"  Math.ceil(126/100)="+Math.ceil(126*1.0/100));
+
     }
 }

@@ -1,7 +1,6 @@
 package com.dianping.dao.impl;
 
 import com.dianping.dao.BaseDao;
-import com.dianping.dao.GroupDao;
 import com.dianping.entity.Group;
 import org.apache.ibatis.session.SqlSessionFactory;
 import org.mybatis.spring.support.SqlSessionDaoSupport;
